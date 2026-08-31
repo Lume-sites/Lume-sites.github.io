@@ -537,21 +537,173 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       CLIQUES NO WHATSAPP
+       MEDIÇÃO DE CLIQUES NO WHATSAPP
+       CLOUDFLARE ZARAZ
 
-       Cada botão pode ter:
+       Cada botão do WhatsApp possui:
+
        data-track="whatsapp"
-       data-placement="hero"
+       data-placement="..."
 
-       Exemplos de placement:
+       Exemplos:
+
        hero
        preco
        cta-final
        whatsapp-flutuante
 
-       Isso deixa os CTAs preparados para
-       medição de eventos no futuro.
+       Os eventos enviados ao Zaraz serão:
+
+       whatsapp_hero
+       whatsapp_preco
+       whatsapp_cta_final
+       whatsapp_whatsapp_flutuante
+
+       Isso permite identificar qual CTA
+       está gerando mais cliques.
     ====================================================== */
+
+
+    function normalizarNomeEvento(
+        placement
+    ) {
+
+        return String(
+            placement
+        )
+            .toLowerCase()
+            .normalize(
+                "NFD"
+            )
+            .replace(
+                /[\u0300-\u036f]/g,
+                ""
+            )
+            .replace(
+                /[^a-z0-9]+/g,
+                "_"
+            )
+            .replace(
+                /^_+|_+$/g,
+                ""
+            );
+
+    }
+
+
+    function registrarCliqueWhatsapp(
+        placement
+    ) {
+
+        const placementOriginal =
+            placement ||
+            "desconhecido";
+
+
+        const placementEvento =
+            normalizarNomeEvento(
+                placementOriginal
+            );
+
+
+        const nomeEvento =
+            "whatsapp_" +
+            placementEvento;
+
+
+        const propriedades = {
+
+            placement:
+                placementOriginal,
+
+            pagina:
+                window.location.pathname,
+
+            url:
+                window.location.href
+
+        };
+
+
+        /* CLOUDFLARE ZARAZ */
+
+        if (
+            window.zaraz &&
+            typeof window.zaraz.track ===
+            "function"
+        ) {
+
+            try {
+
+                window.zaraz.track(
+                    nomeEvento,
+                    propriedades
+                );
+
+            } catch (error) {
+
+                console.warn(
+                    "Não foi possível registrar o evento no Zaraz.",
+                    error
+                );
+
+            }
+
+        }
+
+
+        /*
+           Mantemos também o evento interno
+           da Lume para futuras integrações.
+        */
+
+        window.dispatchEvent(
+
+            new CustomEvent(
+                "lume:whatsapp-click",
+                {
+
+                    detail: {
+
+                        placement:
+                            placementOriginal,
+
+                        eventName:
+                            nomeEvento
+
+                    }
+
+                }
+            )
+
+        );
+
+
+        /*
+           Compatibilidade futura caso
+           Google Tag Manager seja usado.
+        */
+
+        if (
+            Array.isArray(
+                window.dataLayer
+            )
+        ) {
+
+            window.dataLayer.push({
+
+                event:
+                    nomeEvento,
+
+                placement:
+                    placementOriginal
+
+            });
+
+        }
+
+    }
+
 
     trackedWhatsappLinks.forEach(
         (link) => {
@@ -567,39 +719,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         "desconhecido";
 
 
-                    window.dispatchEvent(
-
-                        new CustomEvent(
-                            "lume:whatsapp-click",
-                            {
-
-                                detail: {
-                                    placement
-                                }
-
-                            }
-                        )
-
+                    registrarCliqueWhatsapp(
+                        placement
                     );
-
-
-                    if (
-                        Array.isArray(
-                            window.dataLayer
-                        )
-                    ) {
-
-                        window.dataLayer.push({
-
-                            event:
-                                "whatsapp_click",
-
-                            placement:
-                                placement
-
-                        });
-
-                    }
 
                 }
             );
