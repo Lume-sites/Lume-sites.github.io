@@ -1333,9 +1333,11 @@ button:focus-visible {
     border-radius: 50%;
     color: var(--terracotta-light);
     font-family: "Manrope", sans-serif;
-    font-size: clamp(7rem, 14vw, 12rem);
+    font-size: clamp(5rem, 9vw, 8rem);
     line-height: 1;
     font-weight: 400;
+    letter-spacing: 0.08em;
+    padding-left: 0.08em;
 }
 
 .about-copy h2 {
@@ -1678,6 +1680,75 @@ button:focus-visible {
     transform: translateY(0);
 }
 
+
+/* =========================================================
+   PÁGINAS LEGAIS
+========================================================= */
+
+.legal-page {
+    min-height: 100vh;
+    padding: 195px 0 90px;
+    background: var(--cream);
+}
+
+.legal-shell {
+    max-width: 900px;
+}
+
+.legal-head {
+    margin-bottom: 52px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid var(--border);
+}
+
+.legal-head h1 {
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    font-weight: 500;
+}
+
+.legal-head p {
+    margin-top: 18px;
+    color: var(--brown-soft);
+}
+
+.legal-content {
+    display: grid;
+    gap: 38px;
+}
+
+.legal-section h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+.legal-section p,
+.legal-section li {
+    margin-top: 11px;
+    color: var(--brown-soft);
+    line-height: 1.8;
+}
+
+.legal-section ul,
+.legal-section ol {
+    padding-left: 22px;
+}
+
+.legal-note {
+    padding: 20px;
+    border: 1px solid rgba(196, 95, 62, 0.2);
+    border-radius: 16px;
+    background: rgba(196, 95, 62, 0.06);
+}
+
+.legal-back {
+    margin-top: 50px;
+}
+
 /* =========================================================
    RESPONSIVO
 ========================================================= */
@@ -1994,6 +2065,10 @@ button:focus-visible {
 
     .whatsapp-tooltip {
         display: none;
+    }
+
+    .legal-page {
+        padding: 145px 0 70px;
     }
 }
 
