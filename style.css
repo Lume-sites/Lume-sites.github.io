@@ -1,11 +1,11 @@
 /* =========================================================
-   LUME — STYLE.CSS
+   LUME â€” STYLE.CSS
    Desktop + Tablet + Mobile
 ========================================================= */
 
 
 /* =========================================================
-   RESET + VARIÁVEIS
+   RESET + VARIÃVEIS
 ========================================================= */
 
 *,
@@ -245,7 +245,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   BOTÕES
+   BOTÃ•ES
 ========================================================= */
 
 .btn {
@@ -336,7 +336,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   CORREÇÃO DE EMOJIS NO IOS
+   CORREÃ‡ÃƒO DE EMOJIS NO IOS
 ========================================================= */
 
 .feature-icon,
@@ -723,6 +723,78 @@ button:focus-visible {
     color: var(--terracotta);
 
     font-size: 1rem;
+}
+
+
+.installment-option {
+    display: block;
+
+    margin-top: 6px;
+
+    color: var(--terracotta);
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+.hero-offer .installment-option-hero {
+    display: inline-flex;
+
+    margin-top: 0;
+
+    color: var(--terracotta);
+
+    font-size: 0.74rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.why-card .installment-option-card {
+    margin-top: 7px;
+
+    color: var(--terracotta);
+
+    font-size: 0.79rem;
+    font-weight: 700;
+}
+
+.pricing-highlight .installment-option-highlight {
+    margin-top: 7px;
+
+    color: var(--terracotta);
+
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.price-card-top > .installment-option-price {
+    margin-top: 6px;
+
+    color: var(--terracotta);
+
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.faq-answer .installment-option-faq {
+    margin: 7px 0 8px;
+
+    color: var(--terracotta);
+
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.contact-box .installment-option-contact {
+    margin-top: 8px;
+
+    color: var(--terracotta-light);
+
+    font-size: 0.86rem;
+    font-weight: 700;
 }
 
 .hero-offer i {
@@ -1150,7 +1222,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   PRESENÇA DIGITAL
+   PRESENÃ‡A DIGITAL
 ========================================================= */
 
 .problem-grid {
@@ -1567,7 +1639,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   PORTFÓLIO
+   PORTFÃ“LIO
 ========================================================= */
 
 .portfolio-section {
@@ -1589,6 +1661,11 @@ button:focus-visible {
 
 .portfolio-heading p {
     margin-top: 0;
+}
+
+.portfolio-cases {
+    display: grid;
+    gap: 34px;
 }
 
 .case-card {
@@ -1620,6 +1697,16 @@ button:focus-visible {
             #16303b 0%,
             #244e5c 56%,
             #d7eef2 100%
+        );
+}
+
+.case-preview-muryponario {
+    background:
+        linear-gradient(
+            135deg,
+            #4d4938 0%,
+            #8a7955 56%,
+            #eadfbe 100%
         );
 }
 
@@ -1732,7 +1819,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   PREÇO
+   PREÃ‡O
 ========================================================= */
 
 .pricing-section {
@@ -2085,7 +2172,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   PARA QUEM É
+   PARA QUEM Ã‰
 ========================================================= */
 
 .business-section {
@@ -2568,7 +2655,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   ANIMAÇÕES
+   ANIMAÃ‡Ã•ES
 ========================================================= */
 
 .reveal {
@@ -2589,7 +2676,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   PÁGINAS LEGAIS
+   PÃGINAS LEGAIS
 ========================================================= */
 
 .legal-page {
@@ -3235,7 +3322,7 @@ button:focus-visible {
     }
 
 
-    /* PRESENÇA DIGITAL */
+    /* PRESENÃ‡A DIGITAL */
 
     .problem-grid {
         grid-template-columns: 1fr;
@@ -3422,12 +3509,16 @@ button:focus-visible {
     }
 
 
-    /* PORTFÓLIO */
+    /* PORTFÃ“LIO */
 
     .portfolio-heading {
         gap: 14px;
 
         margin-bottom: 31px;
+    }
+
+    .portfolio-cases {
+        gap: 22px;
     }
 
     .case-card {
@@ -3487,7 +3578,7 @@ button:focus-visible {
     }
 
 
-    /* PREÇO */
+    /* PREÃ‡O */
 
     .pricing-container {
         gap: 38px;
@@ -3623,7 +3714,7 @@ button:focus-visible {
     }
 
 
-    /* PARA QUEM É */
+    /* PARA QUEM Ã‰ */
 
     .business-container {
         gap: 30px;
@@ -3895,6 +3986,24 @@ button:focus-visible {
         font-size: 0.9rem;
     }
 
+
+    .hero-offer .installment-option-hero {
+        width: 100%;
+
+        margin-top: 1px;
+
+        font-size: 0.7rem;
+    }
+
+    .price-card-top > .installment-option-price {
+        font-size: 0.83rem;
+    }
+
+    .faq-answer .installment-option-faq,
+    .contact-box .installment-option-contact {
+        font-size: 0.8rem;
+    }
+
     .hero-visual {
         min-height: 330px;
     }
@@ -3973,7 +4082,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   REDUZIR ANIMAÇÕES
+   REDUZIR ANIMAÃ‡Ã•ES
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {

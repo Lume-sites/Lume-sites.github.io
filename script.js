@@ -380,8 +380,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "Um site profissional, sem complicação, sem mensalidade e feito para colocar seu negócio no digital.":
             "A professional website without the hassle or monthly hosting fees, built to bring your business online.",
 
-        "R$397 uma única vez":
-            "R$397 one-time payment",
+        "R$397":
+            "R$397",
+
+        "ou 6x de R$ 73,25":
+            "or 6 installments of R$73.25",
 
         "Preço simples e transparente para colocar seu site no ar.":
             "Simple, transparent pricing to get your website online.",
@@ -474,8 +477,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "saíram do papel.":
             "brought to life.",
 
-        "Um cliente real e um exemplo de como a Lume transforma informações, serviços e chamadas para contato em uma presença digital profissional.":
-            "A real client and an example of how Lume turns information, services and calls-to-action into a professional digital presence.",
+        "Projetos reais e exemplos de como a Lume transforma informações, produtos, serviços e chamadas para contato em presenças digitais profissionais.":
+            "Real projects and examples of how Lume turns information, products, services and calls-to-action into professional digital presences.",
 
         "CLIENTE REAL":
             "REAL CLIENT",
@@ -485,6 +488,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         "Site institucional desenvolvido pela Lume para apresentar serviços, equipamentos e assistência técnica, facilitando o contato de potenciais clientes pelo WhatsApp.":
             "Business website developed by Lume to present services, equipment and technical support, making it easier for potential customers to get in touch via WhatsApp.",
+
+        "Muryponário":
+            "Muryponário",
+
+        "Cosméticos naturais e produtos artesanais":
+            "Natural cosmetics and handcrafted products",
+
+        "Site institucional desenvolvido pela Lume para apresentar cosméticos naturais, produtos de mel e cera, organizar o catálogo e facilitar encomendas e contatos pelo WhatsApp.":
+            "Business website developed by Lume to showcase natural cosmetics, honey and beeswax products, organize the catalog, and make orders and WhatsApp enquiries easier.",
 
         "Ver site":
             "View website",
@@ -509,8 +521,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "Pagamento":
             "Payment",
 
-        "50% para começar + 50% após a aprovação final, antes da publicação.":
-            "50% to start + 50% after final approval, before publishing.",
+        "R$397: 50% para começar + 50% após a aprovação final, antes da publicação.":
+            "R$397: 50% to start + 50% after final approval, before publishing.",
 
         "Depois do primeiro ano":
             "After the first year",
@@ -679,11 +691,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "Quanto custa o site?":
             "How much does the website cost?",
 
-        "O valor do Pacote Lume é R$397,00. O pagamento é dividido em 50% para iniciar o projeto e 50% após a aprovação final, antes da publicação.":
-            "The Lume Package costs R$397.00. Payment is split into 50% to start the project and 50% after final approval, before publishing.",
+        "O valor do Pacote Lume é R$397,00.":
+            "The Lume Package costs R$397.00.",
 
-        "O que está incluído nos R$397?":
-            "What is included in the R$397 package?",
+        "No valor de R$397, o pagamento é dividido em 50% para iniciar o projeto e 50% após a aprovação final, antes da publicação.":
+            "For the R$397 option, payment is split into 50% to start the project and 50% after final approval, before publishing.",
+
+        "O que está incluído no Pacote Lume?":
+            "What is included in the Lume Package?",
 
         "Um site completo com até 5 seções/páginas principais, versão para celular, tablet e computador, configuração e publicação, 1 ano de domínio, até 2 rodadas de alterações e recursos como WhatsApp, Google Maps, redes sociais, galeria e formulário simples quando fizerem sentido para o projeto.":
             "A complete website with up to 5 main sections/pages, mobile, tablet and desktop versions, setup and publishing, 1 year of domain, up to 2 revision rounds, and features such as WhatsApp, Google Maps, social media, gallery and a simple contact form when relevant to the project.",
@@ -768,6 +783,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "Página inicial real do site Quente e Frio desenvolvido pela Lume":
             "Real homepage of the Quente e Frio website developed by Lume",
 
+        "Página inicial real do site Muryponário desenvolvido pela Lume":
+            "Real homepage of the Muryponário website developed by Lume",
+
         "Lume":
             "Lume"
 
@@ -786,16 +804,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Lume | Sites profissionais para pequenos negócios",
 
             description:
-                "Criamos sites profissionais para pequenos negócios a partir de R$397, sem mensalidade de hospedagem e com entrega em até 7 dias úteis.",
+                "Criamos sites profissionais para pequenos negócios por R$397 ou 6x de R$73,25, sem mensalidade de hospedagem e com entrega em até 7 dias úteis.",
 
             ogTitle:
                 "Lume | Sites profissionais para pequenos negócios",
 
             ogDescription:
-                "Tenha um site profissional a partir de R$397, sem mensalidade de hospedagem.",
+                "Tenha um site profissional por R$397 ou 6x de R$73,25, sem mensalidade de hospedagem.",
 
             ogAlt:
-                "Lume — Seu negócio merece ser visto. Sites profissionais a partir de R$397."
+                "Lume — Seu negócio merece ser visto. Sites profissionais por R$397 ou 6x de R$73,25."
 
         },
 
@@ -805,16 +823,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Lume | Professional websites for small businesses",
 
             description:
-                "We create professional websites for small businesses from R$397, with no monthly hosting fee and delivery in up to 7 business days.",
+                "We create professional websites for small businesses for R$397 or 6 installments of R$73.25, with no monthly hosting fee and delivery in up to 7 business days.",
 
             ogTitle:
                 "Lume | Professional websites for small businesses",
 
             ogDescription:
-                "Get a professional website from R$397, with no monthly hosting fee.",
+                "Get a professional website for R$397 or 6 installments of R$73.25, with no monthly hosting fee.",
 
             ogAlt:
-                "Lume — Your business deserves to be seen. Professional websites from R$397."
+                "Lume — Your business deserves to be seen. Professional websites for R$397 or 6 installments of R$73.25."
 
         }
 
@@ -1177,19 +1195,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const messages = {
 
             hero:
-                "Hi, Lume! I'm interested in the Lume Package for R$397.",
+                "Hi, Lume! I'm interested in the Lume Package for R$397 or 6 installments of R$73.25.",
 
             "serve-negocio":
                 "Hi, Lume! I'd like to know whether the Lume website package is right for my business.",
 
             preco:
-                "Hi, Lume! I'd like to start my website with the R$397 Lume Package.",
+                "Hi, Lume! I'd like to start my website with the Lume Package for R$397 or 6 installments of R$73.25.",
 
             "escopo-diferente":
                 "Hi, Lume! I need something a little different for my website and would like to talk about it.",
 
             "cta-final":
-                "Hi, Lume! I'd like to start my website for R$397.",
+                "Hi, Lume! I'd like to start my website for R$397 or 6 installments of R$73.25.",
 
             flutuante:
                 "Hi, Lume! I'd like to learn more about creating a website."
